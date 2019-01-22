@@ -146,7 +146,7 @@ if __name__ == "__main__":
     else:
         log.logger.info("csv data verify successfully")
 
-    mysql_cli = MysqlClient("172.16.126.63", 3306, "db_pts_nexa", "db_pts_nexa", "db_pts_nexa")
+    mysql_cli = MysqlClient("ip", 3306, "db_name", "username", "password")
     try:
         if csv_result:
             for app, value in csv_result.items():
